@@ -1,0 +1,61 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Property Manager</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="img/Home_font_awesome.svg.png" rel="icon" />
+</head>
+<body>
+    <div>
+        <div class="page-container">
+            <ul class="nav nav-stacked">
+                <li role="presentation" class="active"><a ui-sref="dashboard"><i class="glyphicon glyphicon-pushpin"></i> Dashboard</a></li>
+                <li role="presentation" class="active"><a ui-sref="property.grid"><i class="glyphicon glyphicon-home"></i> Properties</a></li>
+                <li role="presentation" class="active"><a ui-sref="tenant.grid"><i class="glyphicon glyphicon-user"></i> Tenants</a></li>
+                <li role="presentation" class="active"><a ui-sref="lease.grid"><i class="glyphicon glyphicon-file"></i> Leases</a></li>
+            </ul>
+            <div class="page clearfix">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <form class="navbar-form">
+                            <div class="input-group nav-search">
+                                <input type="text" class="form-control input-lg" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default btn-lg">Submit</button>
+                        </form>
+                    </div>
+
+                </nav>
+                <div class="page-header">
+                    <h1><i class="fa fa-home fa-2x"></i> <strong class="header-text">Property Management</strong><small class="header-text-small"> Keep it organized</small></h1>
+                </div>
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/dashboard/dashboard.js"></script>
+
+    <script src="js/property/property.resource.js"></script>
+    <script src="js/property/grid/property.grid.ctrl.js"></script>
+    <script src="js/property/detail/property.detail.ctrl.js"></script>
+    <script src="js/tenant/tenant.resource.js"></script>
+    <script src="js/tenant/grid/tenant.grid.ctrl.js"></script>
+    <script src="js/tenant/detail/tenant.detail.ctrl.js"></script>
+    <script src="js/lease/lease.resource.js"></script>
+    <script src="js/lease/grid/lease.grid.ctrl.js"></script>
+    <script src="js/lease/detail/lease.detail.ctrl.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<div class="well well-sm clearfix">
+    <h2>
+        <i class="glyphicon glyphicon-file"></i><strong> Leases</strong>
+        <button type="button" class="btn btn-default pull-right btn-lg btn-ui-view-add" ui-sref="lease.detail"><i class="glyphicon glyphicon-plus"></i> Add Lease</button>
+    </h2>
+</div>
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Rent $</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="lease in leases">
+                <td>{{lease.StartDate}}</td>
+                <td>{{lease.EndDate}}</td>
+                <td>{{lease.Rent | currency}}</td>
+                <td>
+                    <button class="btn btn-sm btn-default btn-ui-view-edit" ui-sref="lease.detail({ id: lease.LeaseId })">
+                        <i class="fa fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-default btn-ui-view-delete" ng-click="deleteLease(lease)">
+                        <i class="fa fa-remove"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="panel-body">
+        <div class="alert alert-danger" ng-hide="leases.length">
+            There are no leases -  <a ui-sref="lease.detail">Click here to add one</a>
+        </div>
+    </div>
+</div>
+

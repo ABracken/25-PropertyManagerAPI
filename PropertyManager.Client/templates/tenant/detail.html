@@ -1,0 +1,43 @@
+﻿<div class="well well-sm">
+    <h2>
+        <i class="glyphicon glyphicon-user"></i><strong> Tenants</strong>
+    </h2>
+</div>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading ui-view-detail-panel-heading">{{tenant.TenantId ? 'Edit' : 'Add'}} Tenant</div>
+        <div class="panel-body">
+            <div class="ui-view-detail-panel-input">
+                <div class="col-xs-12">
+                    <div class="input">
+                        <span>First Name</span>
+                        <input class="form-control input-lg" id="tenantFirstName" ng-model="tenant.FirstName" />
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="input">
+                        <span>Last Name</span>
+                        <input class="form-control input-lg" id="tenantLastName" ng-model="tenant.LastName" />
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="input">
+                        <span>Telephone Number</span>
+                        <input class="form-control input-lg" id="tenantTelephoneNumber" ng-model="tenant.TelephoneNumber" />
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="input">
+                        <span>Email Address</span>
+                        <input class="form-control input-lg" id="tenantEmail" ng-model="tenant.Email" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer clearfix" style="margin-top:50px;">
+            <button class="btn btn-lg btn-default btn-block center-block ui-view-detail-btn-save" ng-click="saveTenant()">
+                <i class="fa fa-save"></i> Save
+            </button>
+        </div>
+    </div>
+</div>

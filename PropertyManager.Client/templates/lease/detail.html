@@ -1,0 +1,38 @@
+﻿<div class="well well-sm">
+    <h2>
+        <i class="glyphicon glyphicon-file"></i><strong> Leases</strong>
+    </h2>
+</div>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading ui-view-detail-panel-heading">{{lease.LeaseId ? 'Edit' : 'Add'}} Lease</div>
+        <div class="panel-body">
+            <div class="ui-view-detail-panel-input">
+                <div class="col-xs-12">
+                    <div class="input">
+                        <span>Start Date</span>
+                        <input class="form-control input-lg" id="leaseStartDate" ng-model="lease.StartDate" autofocus/>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="input">
+                        <span>End Date</span>
+                        <input class="form-control input-lg" id="leaseEndDate" ng-model="lease.EndDate"/>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="input">
+                        <span>Rent</span>
+                        <input class="form-control input-lg" id="leaseRent" ng-model="lease.Rent" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer clearfix" style="margin-top:50px;">
+            <button class="btn btn-lg btn-default btn-block center-block ui-view-detail-btn-save" ng-click="saveLease()">
+                <i class="fa fa-save"></i> Save
+            </button>
+        </div>
+    </div>
+</div>
+

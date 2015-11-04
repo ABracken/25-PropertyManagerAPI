@@ -1,0 +1,40 @@
+﻿<div class="well well-sm clearfix">
+    <h2>
+        <i class="glyphicon glyphicon-user"></i><strong> Tenants</strong>
+        <button type="button" class="btn btn-default pull-right btn-lg btn-ui-view-add" ui-sref="tenant.detail"><i class="glyphicon glyphicon-plus"></i> Add Tenant</button>
+    </h2>
+</div>
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Telephone Number</th>
+                <th>Email Address</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="tenant in tenants">
+                <td>{{tenant.FirstName}}</td>
+                <td>{{tenant.LastName}}</td>
+                <td>{{tenant.TelephoneNumber}}</td>
+                <td>{{tenant.Email}}</td>
+                <td>
+                    <button class="btn btn-sm btn-default btn-ui-view-edit" ui-sref="tenant.detail({ id: tenant.TenantId })">
+                        <i class="fa fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-default btn-ui-view-delete" ng-click="deleteTenant(tenant)">
+                        <i class="fa fa-remove"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="panel-body">
+        <div class="alert alert-danger" ng-hide="tenants.length">
+            There are no tenants -  <a ui-sref="tenant.detail">Click here to add one</a>
+        </div>
+    </div>
+</div>

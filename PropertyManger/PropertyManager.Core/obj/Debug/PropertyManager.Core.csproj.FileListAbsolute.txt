@@ -1,0 +1,10 @@
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\bin\Debug\PropertyManager.Core.dll.config
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\bin\Debug\PropertyManager.Core.dll
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\bin\Debug\PropertyManager.Core.pdb
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\bin\Debug\EntityFramework.dll
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\bin\Debug\EntityFramework.xml
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\obj\Debug\PropertyManager.Core.csprojResolveAssemblyReference.cache
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\obj\Debug\PropertyManager.Core.dll
+C:\Users\Adriann\Documents\GitHub\25-PropertyManagerAPI\PropertyManger\PropertyManager.Core\obj\Debug\PropertyManager.Core.pdb
