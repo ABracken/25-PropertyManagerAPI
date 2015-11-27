@@ -15,9 +15,10 @@ using PropertyManger.Core.Models;
 
 namespace PropertyManger.Controllers
 {
+    [Authorize]
     public class PropertiesController : ApiController
     {
-        private PropertyManagerDbContext db = new PropertyManagerDbContext();
+        private PropertyManager.Core.Infrastructure.PropertyManagerDbContext db = new PropertyManager.Core.Infrastructure.PropertyManagerDbContext();
 
         // GET: api/Properties
         public IEnumerable<PropertyModel> GetProperties()

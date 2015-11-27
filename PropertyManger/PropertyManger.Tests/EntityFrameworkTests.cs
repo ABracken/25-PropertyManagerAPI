@@ -11,7 +11,7 @@ namespace PropertyManger.Tests
         [TestMethod]
         public void GenerateDatabaseTest()
         {
-            using (var db = new PropertyManagerDbContext())
+            using (var db = new PropertyManager.Core.Infrastructure.PropertyManagerDbContext())
             {
                 var firstProperty = db.Properties.FirstOrDefault();
 

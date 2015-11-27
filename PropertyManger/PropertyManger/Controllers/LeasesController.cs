@@ -15,9 +15,10 @@ using AutoMapper;
 
 namespace PropertyManger.Controllers
 {
+    [Authorize]
     public class LeasesController : ApiController
     {
-        private PropertyManagerDbContext db = new PropertyManagerDbContext();
+        private PropertyManager.Core.Infrastructure.PropertyManagerDbContext db = new PropertyManager.Core.Infrastructure.PropertyManagerDbContext();
 
         // GET: api/Leases
         public IEnumerable<LeaseModel> GetLeases()

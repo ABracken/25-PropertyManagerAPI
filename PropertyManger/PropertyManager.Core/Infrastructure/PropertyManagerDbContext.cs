@@ -1,4 +1,5 @@
-﻿using PropertyManager.Core.Domain;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using PropertyManager.Core.Domain;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PropertyManager.Core.Infrastructure
 {
-    public class PropertyManagerDbContext : DbContext
+    public class PropertyManagerDbContext : IdentityDbContext
     {
         public PropertyManagerDbContext() : base("PropertyManager")
         {
